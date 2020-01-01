@@ -1,17 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <title>Websocket Client</title>
-</head>
-<body>
-  <script>
-    var exampleSocket = new WebSocket("ws://chathax-server.proxneon.repl.co");
-    exampleSocket.onopen = function (event) {
-      exampleSocket.send("Can you hear me, socket? I am trying to send sockets XD"); 
-    };
-    exampleSocket.onmessage = function (event) {
-      console.log(event.data);
-    }
-  </script>
-</body>
-</html>
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+    var socket = io();
+    socket.on('connect', function() {
+        socket.emit('my event', {data: 'I\'m connected!'});
+    });
+</script>
