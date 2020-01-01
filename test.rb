@@ -1,6 +1,6 @@
 require 'socket'
 
-server = TCPServer.new('localhost', 2345)
+server = TCPServer.new('0.0.0.0', 4000)
 
 loop do
 
