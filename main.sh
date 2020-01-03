@@ -1,5 +1,7 @@
-pip3 websockets
+pip3 install flask
+pip3 install eventlet
+pip3 install flask-socketio
 export GEM_HOME=~/.gem
 export PATH="$GEM_HOME/bin:$PATH"
-gem install pycall
-ruby sockets.rb
+clear
+python3 sockets.py
