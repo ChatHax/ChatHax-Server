@@ -1,2 +1,2 @@
 language = "bash"
-run = "ruby start.rb"
+run = "sh main.sh"

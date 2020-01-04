@@ -1,7 +1,8 @@
-pip3 install flask
-pip3 install eventlet
-pip3 install flask-socketio
+# install the websockets library
+pip3 install websockets 
+# This stuff sets up gems so they can be installed locally
 export GEM_HOME=~/.gem
 export PATH="$GEM_HOME/bin:$PATH"
+# Clear the screen and run sockets.py
 clear
 python3 sockets.py
