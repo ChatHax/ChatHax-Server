@@ -1,0 +1,2 @@
+class ClientNotConnected:
+    pass
